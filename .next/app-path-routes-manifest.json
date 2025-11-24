@@ -1,8 +1,0 @@
-{
-  "/_not-found/page": "/_not-found",
-  "/a3/[id]/edit/page": "/a3/[id]/edit",
-  "/a3/[id]/view/page": "/a3/[id]/view",
-  "/create/page": "/create",
-  "/home/page": "/home",
-  "/page": "/"
-}
