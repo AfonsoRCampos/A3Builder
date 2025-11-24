@@ -1,6 +1,8 @@
 ## Build Project
 
-To be done when first installing the app. Must also be repeated each time there is a new version.
+To be done when first installing the app. Must also be repeated each time there is a new version.<p>
+
+WARNING: make sure you have at least ~810MB of available disk space before build.
 
 ```
 npm ci
