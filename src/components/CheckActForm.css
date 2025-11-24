@@ -1,0 +1,161 @@
+/* CheckAct table styling (based on actions table but orange themed) */
+.checkact-table-wrap {
+    overflow: auto;
+    max-height: 320px;
+    border-radius: 6px;
+    border: 2px solid var(--orange-dark, #f39c12);
+}
+
+.checkact-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: center;
+    font-size: 12px;
+}
+
+.checkact-table thead th {
+    padding: 8px;
+    font-weight: 700;
+    background: var(--orange-dark, #f39c12);
+    color: #fff;
+    font-size: 12px;
+    text-align: left;
+}
+
+.checkact-table tbody td {
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 8px;
+}
+
+.checkact-table td:not(:first-child) {
+    border-left: 1px solid rgb(255, 255, 255);
+}
+
+.checkact-table tbody tr:not(:last-child) td {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.metric-freq-select {
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.08);
+    background: white;
+    width: 100%;
+}
+
+.checkact-small-muted {
+    color: #666;
+    font-size: 12px;
+}
+
+/* TD utility classes */
+.checkact-td {
+    padding: 8px;
+    border-bottom: 1px solid #f3f3f3;
+    vertical-align: middle;
+}
+
+.checkact-td--center {
+    text-align: center;
+}
+
+.checkact-td-sm {
+    padding: 6px;
+    border-bottom: 1px solid #fafafa;
+    vertical-align: middle;
+}
+
+.checkact-td-sm--center {
+    text-align: center;
+}
+
+.checkact-edit-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: center;
+    font-size: 12px;
+}
+
+.checkact-edit-table thead th {
+    padding: 8px;
+    font-weight: 700;
+    background: var(--orange-dark, #f39c12);
+    color: #fff;
+    font-size: 12px;
+    text-align: left;
+}
+
+.checkact-edit-table tbody td {
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    padding: 8px;
+}
+
+.checkact-edit-table td:not(:first-child) {
+    border-left: 1px solid rgb(255, 255, 255);
+}
+
+.checkact-edit-table tbody tr:not(:last-child) td {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.checkact-edit-table::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.checkact-edit-table::-webkit-scrollbar-track {
+    background: var(--orange-dark);
+}
+
+.checkact-edit-table::-webkit-scrollbar-thumb {
+    background-color: var(--orange-dark);
+    border-radius: 6px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+.checkact-edit-table::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.32);
+}
+
+.checkact-edit-table,
+.checkact-edit-wrap,
+.checkact-table-wrap {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.22) transparent;
+}
+
+/* also set webkit scrollbar rules for the wrappers */
+.checkact-edit-wrap::-webkit-scrollbar,
+.checkact-table-wrap::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.checkact-edit-wrap::-webkit-scrollbar-track,
+.checkact-table-wrap::-webkit-scrollbar-track {
+    background: var(--orange-dark);
+}
+
+.checkact-edit-wrap::-webkit-scrollbar-thumb,
+.checkact-table-wrap::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.22);
+    border-radius: 6px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+.checkact-edit-wrap::-webkit-scrollbar-thumb:hover,
+.checkact-table-wrap::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.32);
+}

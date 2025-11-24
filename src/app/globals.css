@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --main: rgb(46, 0, 155);
+  --main-highlight: #7E54E0;
+  --main-hover: #8687b6;
+  --accent: #3A5CDC;
+  --accent-highlight: #c2caeb;
+  --accent-hover: #a6b4e9;
+  --accent-bold: #0025A9;
+  --cancel: #af0000ff;
+  --cancel-highlight: rgb(243, 72, 72);
+  --green: rgb(62, 145, 62);
+  --green-highlight: rgb(150, 175, 150);
+  --green-dark: rgb(17, 80, 17);
+  --yellow: rgb(255, 206, 0);
+  --orange: rgb(255, 140, 0);
+  --orange-highlight: rgb(255, 194, 137);
+  --orange-dark: rgb(223, 119, 0);
+  --blue: rgb(65, 201, 224);
+  --blue-highlight: rgb(193, 240, 255);
+  --blue-hover: rgb(230, 249, 255);
+  --blue-dark: rgb(0, 137, 153);
+  --gray: rgb(141, 141, 141);
+  --gray-dark: rgb(75, 75, 75);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+@import "rsuite/dist/rsuite-no-reset.min.css";
+
+/* Subtle horizontal scrollbar for table cells to avoid row height expansion */
+.cell-scroll {
+  white-space: nowrap; /* prevent wrapping */
+  overflow-x: auto;    /* enable horizontal scroll if content overflows */
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: rgba(0,0,0,0.12) transparent;
+}
+.cell-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+.cell-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.cell-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.12);
+  border-radius: 999px;
+}
+
+/* Hide the vertical scrollbar if it ever appears */
+.cell-scroll::-webkit-scrollbar-button { display: none; }
+
+@layer base {
+  img {
+  @apply inline-block;
+  }
+}

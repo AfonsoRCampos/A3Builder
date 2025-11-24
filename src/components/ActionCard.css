@@ -1,0 +1,135 @@
+/* Put this after react-datepicker.css so it overrides defaults */
+.custom-date-input {
+  width: 100%;
+  height: 2em;
+  box-sizing: border-box;
+  border: 1px solid var(--green);
+  border-radius: 6px;
+  padding: 6px 8px;
+  height: 36px;
+  background: white;
+  color: #222;
+  font-size: 14px;
+}
+
+/* If you need to target the input via the wrapper */
+.custom-date-wrapper {
+  width: 100%;
+}
+
+.rs-slider-mark {
+    top: 1em;
+    font-size: 12;
+
+}
+
+/* .rs-slider-mark-content {
+    margin: 0;
+}
+
+.rs-slider-mark-last .rs-slider-mark-content {
+    margin: 0;
+} */
+
+.rs-slider-progress-bar {
+    background-color: var(--green);
+}
+
+.rs-slider-handle::before {
+    border-color: var(--green);
+}
+
+.rs-slider-graduator > ol > li.rs-slider-pass:before{
+    border-color: var(--green-dark);
+}
+
+/* Fix spacing and overflow for rsuite Slider inside card */
+.action-slider { width: 100% !important; padding: 0 !important; box-sizing: border-box; overflow: visible; }
+.action-slider .rs-slider { width: 100%; padding: 0 6px; box-sizing: border-box; }
+.action-slider .rs-slider-progress-bar { height: 8px; border-radius: 999px; margin: 0; }
+
+/* Make react-datepicker highlights match project green */
+.react-datepicker__header {
+  background: var(--green-highlight) !important;
+  border: none !important;
+}
+.react-datepicker__current-month,
+.react-datepicker__day-name {
+  color: #000000 !important;
+  color: var(--green-dark) !important;
+}
+.react-datepicker__navigation-icon::before {
+  border-color: #fff !important;
+}
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: var(--green) !important;
+  color: #fff !important;
+  border-radius: 6px !important;
+}
+.react-datepicker__day:hover {
+  background-color: var(--green-highlight) !important;
+  color: #000 !important;
+}
+.react-datepicker__day--today {
+  border: 1px solid var(--green) !important;
+  border-radius: 6px !important;
+}
+.react-datepicker__triangle, .react-datepicker__triangle::before, .react-datepicker__triangle::after {
+  border-bottom-color: var(--green) !important;
+}
+
+/* Ensure input wrapper width when using wrapper class */
+.custom-date-wrapper input,
+.custom-date-input {
+  width: 100% !important;
+}
+
+/* Position the calendar icon after the input and color it green */
+.custom-date-wrapper .react-datepicker__input-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.custom-date-wrapper .react-datepicker__input-container input {
+  order: 1;
+  flex: 1 1 auto;
+}
+.custom-date-wrapper .react-datepicker__calendar-icon {
+  order: 2;
+  color: var(--green) !important;
+  display: inline-flex;
+  align-items: center;
+}
+.custom-date-wrapper .react-datepicker__calendar-icon > svg {
+  fill: var(--green) !important;
+}
+
+/* Segmented control for Effort (low/medium/high) */
+.segmented-weight { display:flex; align-items:center; }
+.segmented-weight .seg-btn { flex:1 1 auto; padding:6px 8px; border-radius:6px; border:1px solid #ddd; background:#fff; cursor:pointer; font-size:13px; text-align:center; }
+.segmented-weight .seg-btn:hover { box-shadow: 0 1px 0 rgba(0,0,0,0.03); }
+/* active shared */
+
+@media (max-width:520px) {
+  .segmented-weight { gap:4px; }
+  .segmented-weight .seg-btn { padding:6px 6px; font-size:12px; }
+}
+
+/* Make first/last buttons visually distinct (joined segmented control) */
+.segmented-weight .seg-btn { border-radius: 0; position: relative; }
+.segmented-weight .seg-btn:first-child { border-top-left-radius: 6px; border-bottom-left-radius: 6px; }
+.segmented-weight .seg-btn:last-child { border-top-right-radius: 6px; border-bottom-right-radius: 6px; }
+.segmented-weight .seg-btn + .seg-btn { margin-left: -1px; }
+.segmented-weight .seg-btn.active { color: white; }
+.segmented-weight .seg-btn:focus { outline: 2px solid rgba(0,0,0,0.06); box-shadow: 0 0 0 3px rgba(34,197,94,0.12); }
+
+.seg-btn.active.bg-green {
+    background-color: var(--green);
+}
+.seg-btn.active.bg-orange {
+    background-color: var(--orange);
+}
+.seg-btn.active.bg-red {
+    background-color: var(--cancel-highlight);
+}

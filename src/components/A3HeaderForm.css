@@ -1,0 +1,34 @@
+:root {
+  --rs-calendar-range-bg: var(--blue-highlight);
+  --rs-calendar-cell-selected-hover-bg: var(--blue-highlight);
+  --rs-btn-primary-hover-bg: var(--blue-highlight);
+  --rs-primary-50: var(--blue-highlight);
+  --rs-primary-100: var(--blue-highlight);
+  --rs-primary-200: var(--blue-highlight);
+  --rs-primary-300: var(--blue-highlight);
+  --rs-primary-400: var(--blue-highlight);
+  --rs-primary-500: var(--blue);
+  --rs-primary-600: var(--blue);
+  --rs-primary-700: var(--blue);
+  --rs-primary-800: var(--blue);
+  --rs-primary-900: var(--blue);
+}
+
+.custom-date-range.rs-picker-daterange {
+  background: white;
+  border: 1px solid var(--main);
+  border-radius: 6px;
+  transition: 'background 0.2s, border-color 0.2s';
+}
+
+.custom-date-range.rs-picker-daterange:hover,
+.custom-date-range.rs-picker-daterange:focus-within {
+  background: var(--accent);
+  border-color: var(--main);
+  /* or your desired color */
+}
+
+.custom-date-range .rs-picker-toggle {
+  background: transparent;
+  border: none;
+}
